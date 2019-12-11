@@ -1,0 +1,16 @@
+<form method="POST" action="/room/profile/{{this._id}}/?_method=PUT" enctype="multipart/form-data">
+{{#each roomSearch}}
+   <img class="img" src="/uploads/{{this.roomImage}}"><br>
+    {{this.title}}<br>
+    {{this.price}}<br>
+    {{this.description}}<br>
+    {{this.location}}<br>
+     <input type="submit" value="Book Now">
+
+{{else}}
+
+There are no rooms in this location.
+{{/each}}
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</form>
